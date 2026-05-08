@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ekta Digital — Premium Office Electronics</title>
-    <meta name="description" content="Your trusted B2B destination for premium office electronics. Direct pricing, bulk discounts, M-Pesa & card payments, fast delivery across Tanzania.">
+    <meta name="description"
+        content="Your trusted B2B destination for premium office electronics. Direct pricing, bulk discounts, M-Pesa & card payments, fast delivery across Tanzania.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -12,7 +14,7 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
         if (typeof lucide === 'undefined') {
-            window.lucide = { createIcons: function() {} };
+            window.lucide = { createIcons: function () { } };
         }
     </script>
     <script>
@@ -38,18 +40,30 @@
         }
     </script>
     <style>
-        * { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-        html { scroll-behavior: smooth; }
-        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: #fff; color: #1d1d1f; }
+        * {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #fff;
+            color: #1d1d1f;
+        }
 
         .apple-card {
             background: #fff;
             border-radius: 18px;
             transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
+
         .apple-card:hover {
             transform: scale(1.02);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
         }
 
         .apple-btn {
@@ -65,6 +79,7 @@
             align-items: center;
             gap: 8px;
         }
+
         .apple-btn:hover {
             background: #0077ed;
             transform: scale(1.02);
@@ -83,6 +98,7 @@
             align-items: center;
             gap: 8px;
         }
+
         .apple-btn-secondary:hover {
             text-decoration: underline;
         }
@@ -100,6 +116,7 @@
             align-items: center;
             gap: 8px;
         }
+
         .apple-btn-dark:hover {
             background: #333;
             transform: scale(1.02);
@@ -112,6 +129,7 @@
             line-height: 1.05;
             color: #1d1d1f;
         }
+
         .hero-subhead {
             font-size: clamp(19px, 3vw, 28px);
             font-weight: 400;
@@ -128,6 +146,7 @@
             line-height: 1.1;
             color: #1d1d1f;
         }
+
         .section-subhead {
             font-size: clamp(17px, 2vw, 21px);
             font-weight: 400;
@@ -145,13 +164,16 @@
             transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
             border: 1px solid #f0f0f0;
         }
+
         .product-card-apple:hover {
             transform: translateY(-4px);
-            box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
         }
+
         .product-card-apple:hover .product-img-apple {
             transform: scale(1.05);
         }
+
         .product-img-apple {
             transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
         }
@@ -160,7 +182,7 @@
             background: rgba(255, 255, 255, 0.72);
             backdrop-filter: saturate(180%) blur(20px);
             -webkit-backdrop-filter: saturate(180%) blur(20px);
-            border-bottom: 1px solid rgba(0,0,0,0.05);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
         }
 
         .nav-link-apple {
@@ -171,7 +193,10 @@
             transition: opacity 0.3s ease;
             letter-spacing: -0.01em;
         }
-        .nav-link-apple:hover { opacity: 1; }
+
+        .nav-link-apple:hover {
+            opacity: 1;
+        }
 
         .cat-pill-apple {
             padding: 8px 20px;
@@ -186,38 +211,57 @@
             white-space: nowrap;
             letter-spacing: -0.01em;
         }
+
         .cat-pill-apple:hover {
             background: #e8e8ed;
         }
+
         .cat-pill-apple.active {
             background: #1d1d1f;
             color: #fff;
         }
 
         .scroll-reveal {
-            opacity: 1; transform: translateY(0);
+            opacity: 1;
+            transform: translateY(0);
             transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
         }
+
         .js-animations .scroll-reveal {
-            opacity: 0; transform: translateY(40px);
+            opacity: 0;
+            transform: translateY(40px);
         }
-        .js-animations .scroll-reveal.revealed { opacity: 1; transform: translateY(0); }
+
+        .js-animations .scroll-reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
 
         .cart-drawer-apple {
             transform: translateX(100%);
             transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        .cart-drawer-apple.open { transform: translateX(0); }
+
+        .cart-drawer-apple.open {
+            transform: translateX(0);
+        }
 
         .modal-apple {
-            opacity: 0; pointer-events: none;
+            opacity: 0;
+            pointer-events: none;
             transition: opacity 0.3s ease;
         }
-        .modal-apple.active { opacity: 1; pointer-events: auto; }
+
+        .modal-apple.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
         .modal-content-apple {
             transform: scale(0.95) translateY(20px);
             transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
+
         .modal-apple.active .modal-content-apple {
             transform: scale(1) translateY(0);
         }
@@ -227,14 +271,18 @@
             opacity: 0;
             transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
         }
+
         .toast-apple.show {
             transform: translateY(0) scale(1);
             opacity: 1;
         }
 
         .qty-btn-apple {
-            width: 32px; height: 32px;
-            display: flex; align-items: center; justify-content: center;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             border: 1px solid #d2d2d7;
             background: white;
             cursor: pointer;
@@ -243,28 +291,56 @@
             font-size: 16px;
             color: #1d1d1f;
         }
-        .qty-btn-apple:hover { background: #f5f5f7; }
+
+        .qty-btn-apple:hover {
+            background: #f5f5f7;
+        }
+
         .qty-input-apple {
-            width: 40px; height: 32px; text-align: center;
+            width: 40px;
+            height: 32px;
+            text-align: center;
             border: none;
-            font-weight: 600; color: #1d1d1f;
+            font-weight: 600;
+            color: #1d1d1f;
             font-size: 15px;
             background: transparent;
         }
 
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: transparent; }
-        ::-webkit-scrollbar-thumb { background: #d2d2d7; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #86868b; }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
 
-        .hide-scrollbar::-webkit-scrollbar { display: none; }
-        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #d2d2d7;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #86868b;
+        }
+
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
 
         .mobile-menu-apple {
             transform: translateX(100%);
             transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        .mobile-menu-apple.open { transform: translateX(0); }
+
+        .mobile-menu-apple.open {
+            transform: translateX(0);
+        }
 
         .feature-card {
             background: #fff;
@@ -272,8 +348,9 @@
             padding: 40px;
             transition: all 0.4s ease;
         }
+
         .feature-card:hover {
-            box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
         }
 
         .link-arrow {
@@ -285,20 +362,49 @@
             gap: 4px;
             transition: gap 0.3s ease;
         }
-        .link-arrow:hover { gap: 8px; }
+
+        .link-arrow:hover {
+            gap: 8px;
+        }
 
         @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-15px); }
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
         }
-        .animate-float { animation: float 6s ease-in-out infinite; }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
         @keyframes successPop {
-            0% { transform: scale(0); opacity: 0; }
-            100% { transform: scale(1); opacity: 1; }
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
         }
+
         @keyframes slideInCart {
-            0% { opacity: 0; transform: translateX(12px); }
-            100% { opacity: 1; transform: translateX(0); }
+            0% {
+                opacity: 0;
+                transform: translateX(12px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
         }
 
         /* ===== CART ITEM FIXES ===== */
@@ -311,14 +417,17 @@
             transition: all 0.25s ease;
             border: 1px solid transparent;
         }
+
         .cart-item-row:hover {
             border-color: #e8e8ed;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
         }
+
         .cart-item-row.removing {
             opacity: 0;
             transform: translateX(20px);
         }
+
         .cart-item-image {
             width: 72px;
             height: 72px;
@@ -328,6 +437,7 @@
             flex-shrink: 0;
             padding: 8px;
         }
+
         .cart-item-info {
             flex: 1;
             min-width: 0;
@@ -335,12 +445,14 @@
             flex-direction: column;
             justify-content: space-between;
         }
+
         .cart-item-header {
             display: flex;
             align-items: flex-start;
             justify-content: space-between;
             gap: 8px;
         }
+
         .cart-item-name {
             color: #1d1d1f;
             font-weight: 600;
@@ -352,11 +464,13 @@
             -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
         }
+
         .cart-item-price-each {
             color: #86868b;
             font-size: 12px;
             margin-top: 2px;
         }
+
         .cart-item-remove {
             color: #d2d2d7;
             padding: 6px;
@@ -367,16 +481,19 @@
             align-items: center;
             justify-content: center;
         }
+
         .cart-item-remove:hover {
             color: #ff3b30;
             background: rgba(255, 59, 48, 0.08);
         }
+
         .cart-item-footer {
             display: flex;
             align-items: center;
             justify-content: space-between;
             margin-top: 8px;
         }
+
         .cart-qty-control {
             display: flex;
             align-items: center;
@@ -386,6 +503,7 @@
             overflow: hidden;
             height: 32px;
         }
+
         .cart-qty-btn {
             width: 32px;
             height: 100%;
@@ -401,12 +519,15 @@
             font-weight: 500;
             user-select: none;
         }
+
         .cart-qty-btn:hover {
             background: #f5f5f7;
         }
+
         .cart-qty-btn:active {
             background: #e8e8ed;
         }
+
         .cart-qty-value {
             width: 36px;
             height: 100%;
@@ -420,6 +541,7 @@
             border-right: 1px solid #d2d2d7;
             user-select: none;
         }
+
         .cart-item-total {
             font-weight: 700;
             font-size: 15px;
@@ -428,18 +550,33 @@
         }
 
         @media (max-width: 640px) {
-            .cart-drawer-apple { padding-bottom: env(safe-area-inset-bottom, 0px); }
-            .cart-item-row { padding: 12px; gap: 12px; }
-            .cart-item-image { width: 60px; height: 60px; }
-            .cart-item-name { font-size: 13px; }
+            .cart-drawer-apple {
+                padding-bottom: env(safe-area-inset-bottom, 0px);
+            }
+
+            .cart-item-row {
+                padding: 12px;
+                gap: 12px;
+            }
+
+            .cart-item-image {
+                width: 60px;
+                height: 60px;
+            }
+
+            .cart-item-name {
+                font-size: 13px;
+            }
         }
     </style>
 </head>
+
 <body class="bg-white text-[#1d1d1f] antialiased">
 
     <!-- Announcement Bar -->
     <div class="bg-[#1d1d1f] text-white text-xs py-2.5 px-4 text-center font-medium tracking-wide">
-        <span class="text-[#86868b]">Free Delivery</span> on orders over KES 5,000. New customers get <span class="text-white">10% OFF</span> — Use code <span class="font-mono text-[#86868b]">WELCOME10</span>
+        <span class="text-[#86868b]">Free Delivery</span> on orders over KES 5,000. New customers get <span
+            class="text-white">10% OFF</span> — Use code <span class="font-mono text-[#86868b]">WELCOME10</span>
     </div>
 
     <!-- Navigation -->
@@ -463,32 +600,30 @@
                 <div class="flex items-center gap-3">
                     <!-- Expandable Search -->
                     <div class="relative flex items-center" id="navSearchContainer">
-                        <div id="navSearchInputWrapper" class="overflow-hidden transition-all duration-300 ease-out" style="width: 0; opacity: 0;">
-                            <input 
-                                type="text" 
-                                id="navSearchInput" 
-                                placeholder="Search products..." 
+                        <div id="navSearchInputWrapper" class="overflow-hidden transition-all duration-300 ease-out"
+                            style="width: 0; opacity: 0;">
+                            <input type="text" id="navSearchInput" placeholder="Search products..."
                                 class="bg-[#f5f5f7] border-none rounded-full px-4 py-1.5 text-sm text-[#1d1d1f] placeholder-[#86868b] outline-none w-48 lg:w-56"
                                 onkeyup="searchProducts(this.value)"
-                                onkeydown="if(event.key === 'Enter') { event.preventDefault(); document.getElementById('products').scrollIntoView({behavior:'smooth'}); }"
-                            >
+                                onkeydown="if(event.key === 'Enter') { event.preventDefault(); document.getElementById('products').scrollIntoView({behavior:'smooth'}); }">
                         </div>
-                        <button 
-                            onclick="toggleNavSearch()" 
+                        <button onclick="toggleNavSearch()"
                             class="p-2 text-[#1d1d1f] opacity-80 hover:opacity-100 transition-all rounded-full hover:bg-[#f5f5f7]"
-                            id="navSearchBtn"
-                            aria-label="Search"
-                        >
+                            id="navSearchBtn" aria-label="Search">
                             <i data-lucide="search" class="w-5 h-5"></i>
                         </button>
                     </div>
 
-                    <button class="hidden lg:flex items-center text-[#1d1d1f] opacity-80 hover:opacity-100 transition-opacity px-2" onclick="showAuthModal()">
+                    <button
+                        class="hidden lg:flex items-center text-[#1d1d1f] opacity-80 hover:opacity-100 transition-opacity px-2"
+                        onclick="showAuthModal()">
                         <span class="text-xs font-medium">Sign In</span>
                     </button>
-                    <button class="relative text-[#1d1d1f] opacity-80 hover:opacity-100 transition-opacity p-1" onclick="toggleCart()">
+                    <button class="relative text-[#1d1d1f] opacity-80 hover:opacity-100 transition-opacity p-1"
+                        onclick="toggleCart()">
                         <i data-lucide="shopping-bag" class="w-5 h-5"></i>
-                        <span id="cartBadge" class="absolute -top-1 -right-1 w-4 h-4 bg-[#0071e3] text-white text-[9px] font-bold rounded-full flex items-center justify-center hidden">0</span>
+                        <span id="cartBadge"
+                            class="absolute -top-1 -right-1 w-4 h-4 bg-[#0071e3] text-white text-[9px] font-bold rounded-full flex items-center justify-center hidden">0</span>
                     </button>
                     <button class="lg:hidden p-1 text-[#1d1d1f]" onclick="toggleMobileMenu()">
                         <i data-lucide="menu" class="w-5 h-5"></i>
@@ -515,21 +650,30 @@
         <div class="lg:hidden border-t border-[#f0f0f0]">
             <div class="px-4 py-2.5">
                 <div class="flex items-center gap-2 overflow-x-auto hide-scrollbar" id="mobileCategoryPills">
-                    <button onclick="filterByCategory('all')" class="cat-pill-apple active text-xs py-1.5 px-3">All</button>
-                    <button onclick="filterByCategory('laptops')" class="cat-pill-apple text-xs py-1.5 px-3">Laptops</button>
-                    <button onclick="filterByCategory('printers')" class="cat-pill-apple text-xs py-1.5 px-3">Printers</button>
-                    <button onclick="filterByCategory('monitors')" class="cat-pill-apple text-xs py-1.5 px-3">Monitors</button>
-                    <button onclick="filterByCategory('storage')" class="cat-pill-apple text-xs py-1.5 px-3">Storage</button>
-                    <button onclick="filterByCategory('networking')" class="cat-pill-apple text-xs py-1.5 px-3">Networking</button>
-                    <button onclick="filterByCategory('phones')" class="cat-pill-apple text-xs py-1.5 px-3">Phones</button>
-                    <button onclick="filterByCategory('accessories')" class="cat-pill-apple text-xs py-1.5 px-3">Accessories</button>
+                    <button onclick="filterByCategory('all')"
+                        class="cat-pill-apple active text-xs py-1.5 px-3">All</button>
+                    <button onclick="filterByCategory('laptops')"
+                        class="cat-pill-apple text-xs py-1.5 px-3">Laptops</button>
+                    <button onclick="filterByCategory('printers')"
+                        class="cat-pill-apple text-xs py-1.5 px-3">Printers</button>
+                    <button onclick="filterByCategory('monitors')"
+                        class="cat-pill-apple text-xs py-1.5 px-3">Monitors</button>
+                    <button onclick="filterByCategory('storage')"
+                        class="cat-pill-apple text-xs py-1.5 px-3">Storage</button>
+                    <button onclick="filterByCategory('networking')"
+                        class="cat-pill-apple text-xs py-1.5 px-3">Networking</button>
+                    <button onclick="filterByCategory('phones')"
+                        class="cat-pill-apple text-xs py-1.5 px-3">Phones</button>
+                    <button onclick="filterByCategory('accessories')"
+                        class="cat-pill-apple text-xs py-1.5 px-3">Accessories</button>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Mobile Menu -->
-    <div id="mobileMenu" class="mobile-menu-apple fixed inset-y-0 right-0 w-80 bg-white/95 backdrop-blur-xl z-50 shadow-2xl">
+    <div id="mobileMenu"
+        class="mobile-menu-apple fixed inset-y-0 right-0 w-80 bg-white/95 backdrop-blur-xl z-50 shadow-2xl">
         <div class="p-6">
             <div class="flex items-center justify-between mb-8">
                 <span class="font-semibold text-lg">Menu</span>
@@ -538,36 +682,47 @@
                 </button>
             </div>
             <div class="space-y-1">
-                <a href="#products" onclick="toggleMobileMenu()" class="flex items-center gap-3 px-4 py-3 rounded-xl text-[#1d1d1f] hover:bg-[#f5f5f7] transition-colors text-sm font-medium">
+                <a href="#products" onclick="toggleMobileMenu()"
+                    class="flex items-center gap-3 px-4 py-3 rounded-xl text-[#1d1d1f] hover:bg-[#f5f5f7] transition-colors text-sm font-medium">
                     <i data-lucide="package" class="w-4 h-4"></i>Products
                 </a>
-                <a href="#categories" onclick="toggleMobileMenu()" class="flex items-center gap-3 px-4 py-3 rounded-xl text-[#1d1d1f] hover:bg-[#f5f5f7] transition-colors text-sm font-medium">
+                <a href="#categories" onclick="toggleMobileMenu()"
+                    class="flex items-center gap-3 px-4 py-3 rounded-xl text-[#1d1d1f] hover:bg-[#f5f5f7] transition-colors text-sm font-medium">
                     <i data-lucide="grid-3x3" class="w-4 h-4"></i>Categories
                 </a>
-                <a href="#bulk" onclick="toggleMobileMenu()" class="flex items-center gap-3 px-4 py-3 rounded-xl text-[#1d1d1f] hover:bg-[#f5f5f7] transition-colors text-sm font-medium">
+                <a href="#bulk" onclick="toggleMobileMenu()"
+                    class="flex items-center gap-3 px-4 py-3 rounded-xl text-[#1d1d1f] hover:bg-[#f5f5f7] transition-colors text-sm font-medium">
                     <i data-lucide="trending-up" class="w-4 h-4"></i>Bulk Orders
                 </a>
-                <a href="#about" onclick="toggleMobileMenu()" class="flex items-center gap-3 px-4 py-3 rounded-xl text-[#1d1d1f] hover:bg-[#f5f5f7] transition-colors text-sm font-medium">
+                <a href="#about" onclick="toggleMobileMenu()"
+                    class="flex items-center gap-3 px-4 py-3 rounded-xl text-[#1d1d1f] hover:bg-[#f5f5f7] transition-colors text-sm font-medium">
                     <i data-lucide="info" class="w-4 h-4"></i>About Us
                 </a>
             </div>
             <div class="mt-8 pt-8 border-t border-[#f0f0f0]">
-                <button onclick="showAuthModal(); toggleMobileMenu();" class="w-full apple-btn justify-center mb-3">Sign In</button>
-                <button class="w-full apple-btn-secondary justify-center text-[#1d1d1f] border border-[#d2d2d7] hover:bg-[#f5f5f7]">Create Account</button>
+                <button onclick="showAuthModal(); toggleMobileMenu();" class="w-full apple-btn justify-center mb-3">Sign
+                    In</button>
+                <button
+                    class="w-full apple-btn-secondary justify-center text-[#1d1d1f] border border-[#d2d2d7] hover:bg-[#f5f5f7]">Create
+                    Account</button>
             </div>
         </div>
     </div>
-    <div id="mobileOverlay" class="fixed inset-0 bg-black/20 z-40 hidden backdrop-blur-sm" onclick="toggleMobileMenu()"></div>
+    <div id="mobileOverlay" class="fixed inset-0 bg-black/20 z-40 hidden backdrop-blur-sm" onclick="toggleMobileMenu()">
+    </div>
 
     <!-- Cart Drawer -->
-    <div id="cartDrawer" class="cart-drawer-apple fixed inset-y-0 right-0 w-full sm:w-[420px] bg-white/95 backdrop-blur-xl z-50 shadow-2xl border-l border-[#f0f0f0] flex flex-col">
+    <div id="cartDrawer"
+        class="cart-drawer-apple fixed inset-y-0 right-0 w-full sm:w-[420px] bg-white/95 backdrop-blur-xl z-50 shadow-2xl border-l border-[#f0f0f0] flex flex-col">
         <div class="flex items-center justify-between p-6 border-b border-[#f0f0f0] flex-shrink-0">
             <div class="flex items-center gap-3">
                 <i data-lucide="shopping-bag" class="w-5 h-5 text-[#1d1d1f]"></i>
                 <h2 class="font-semibold text-lg">Your Bag</h2>
-                <span id="cartCount" class="bg-[#f5f5f7] text-[#86868b] text-xs font-semibold px-2.5 py-1 rounded-full">0 items</span>
+                <span id="cartCount"
+                    class="bg-[#f5f5f7] text-[#86868b] text-xs font-semibold px-2.5 py-1 rounded-full">0 items</span>
             </div>
-            <button onclick="toggleCart()" class="p-2 text-[#86868b] hover:text-[#1d1d1f] rounded-full hover:bg-[#f5f5f7] transition-colors">
+            <button onclick="toggleCart()"
+                class="p-2 text-[#86868b] hover:text-[#1d1d1f] rounded-full hover:bg-[#f5f5f7] transition-colors">
                 <i data-lucide="x" class="w-5 h-5"></i>
             </button>
         </div>
@@ -598,7 +753,9 @@
             <button onclick="showCheckout()" class="w-full apple-btn justify-center py-3.5 text-base">
                 <i data-lucide="credit-card" class="w-4 h-4"></i>Proceed to Checkout
             </button>
-            <button onclick="toggleCart()" class="w-full text-[#0071e3] text-sm font-medium py-2 hover:underline text-center">Continue Shopping</button>
+            <button onclick="toggleCart()"
+                class="w-full text-[#0071e3] text-sm font-medium py-2 hover:underline text-center">Continue
+                Shopping</button>
         </div>
 
         <!-- Empty Cart State (moved outside items container) -->
@@ -608,7 +765,8 @@
             </div>
             <h3 class="text-[#1d1d1f] font-semibold mb-1 text-sm">Your bag is empty</h3>
             <p class="text-[#86868b] text-sm mb-6">Add some products to get started</p>
-            <button onclick="toggleCart(); document.getElementById('products').scrollIntoView({behavior:'smooth'});" class="apple-btn">Browse Products</button>
+            <button onclick="toggleCart(); document.getElementById('products').scrollIntoView({behavior:'smooth'});"
+                class="apple-btn">Browse Products</button>
         </div>
     </div>
     <div id="cartOverlay" class="fixed inset-0 bg-black/20 z-40 hidden backdrop-blur-sm" onclick="toggleCart()"></div>
@@ -619,13 +777,15 @@
             <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                 <div class="space-y-8 text-center lg:text-left">
                     <div class="space-y-4">
-                        <p class="text-[#0071e3] text-sm font-semibold tracking-wide uppercase">B2B Office Electronics</p>
+                        <p class="text-[#0071e3] text-sm font-semibold tracking-wide uppercase">B2B Office Electronics
+                        </p>
                         <h1 class="hero-headline">
                             Premium Gear.<br>
                             <span class="text-[#86868b]">Direct Pricing.</span>
                         </h1>
                         <p class="hero-subhead max-w-md mx-auto lg:mx-0">
-                            Direct B2B pricing on laptops, printers, monitors & more. Bulk discounts, M-Pesa & card payments, same-day delivery.
+                            Direct B2B pricing on laptops, printers, monitors & more. Bulk discounts, M-Pesa & card
+                            payments, same-day delivery.
                         </p>
                     </div>
 
@@ -662,7 +822,8 @@
                                 </div>
                             </div>
                             <div class="bg-[#f5f5f7] rounded-2xl p-6 mb-4 flex items-center justify-center h-56">
-                                <img src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?w=400&h=300&fit=crop" alt="HP LaserJet Pro" class="max-h-full object-contain product-img-apple">
+                                <img src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?w=400&h=300&fit=crop"
+                                    alt="HP LaserJet Pro" class="max-h-full object-contain product-img-apple">
                             </div>
                             <div class="flex items-end justify-between">
                                 <div>
@@ -681,8 +842,8 @@
                                         <span class="text-[#86868b] text-xs">(128)</span>
                                     </div>
                                 </div>
-                                <button onclick="addToCart(2)" class="apple-btn p-3 rounded-full">
-                                    <i data-lucide="plus" class="w-4 h-4"></i>
+                                <button onclick="addToCart(2)" class="apple-btn-dark p-3 rounded-full">
+                                    <i data-lucide="shopping-bag" class="w-4 h-4"></i>
                                 </button>
                             </div>
                         </div>
@@ -699,7 +860,8 @@
                             </div>
                         </div>
 
-                        <div class="absolute -right-2 bottom-12 apple-card p-3 shadow-lg animate-float" style="animation-delay: 2s;">
+                        <div class="absolute -right-2 bottom-12 apple-card p-3 shadow-lg animate-float"
+                            style="animation-delay: 2s;">
                             <div class="flex items-center gap-2">
                                 <div class="w-8 h-8 rounded-full bg-[#f5f5f7] flex items-center justify-center">
                                     <i data-lucide="zap" class="w-4 h-4 text-[#0071e3]"></i>
@@ -719,7 +881,8 @@
     <!-- Trust Logos -->
     <section class="py-12 bg-white border-y border-[#f0f0f0]">
         <div class="max-w-[1024px] mx-auto px-6 lg:px-8">
-            <p class="text-center text-[#86868b] text-xs font-medium tracking-wider uppercase mb-8">Trusted by leading companies across Tanzania</p>
+            <p class="text-center text-[#86868b] text-xs font-medium tracking-wider uppercase mb-8">Trusted by leading
+                companies across Tanzania</p>
             <div class="flex items-center justify-center gap-12 flex-wrap opacity-40">
                 <span class="text-lg font-semibold text-[#1d1d1f]">Safaricom</span>
                 <span class="text-lg font-semibold text-[#1d1d1f]">KCB Bank</span>
@@ -736,68 +899,100 @@
         <div class="max-w-[1024px] mx-auto px-6 lg:px-8">
             <div class="text-center mb-16 scroll-reveal">
                 <h2 class="section-headline">Everything Your Office Needs</h2>
-                <p class="section-subhead mx-auto">Find all your office essentials in one place with competitive B2B pricing.</p>
+                <p class="section-subhead mx-auto">Find all your office essentials in one place with competitive B2B
+                    pricing.</p>
             </div>
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <button onclick="filterByCategory('laptops')" class="group relative rounded-3xl overflow-hidden aspect-[4/3] cursor-pointer scroll-reveal text-left bg-[#f5f5f7]">
-                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&h=300&fit=crop" alt="Laptops" class="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                <button onclick="filterByCategory('laptops')"
+                    class="group relative rounded-3xl overflow-hidden aspect-[4/3] cursor-pointer scroll-reveal text-left bg-[#f5f5f7]">
+                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&h=300&fit=crop"
+                        alt="Laptops"
+                        class="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                     <div class="absolute bottom-0 left-0 right-0 p-5">
                         <h3 class="text-white font-semibold text-lg">Laptops</h3>
                         <p class="text-white/70 text-sm">248 Products</p>
                     </div>
                 </button>
-                <button onclick="filterByCategory('printers')" class="group relative rounded-3xl overflow-hidden aspect-[4/3] cursor-pointer scroll-reveal text-left bg-[#f5f5f7]" style="transition-delay: 0.1s;">
-                    <img src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?w=400&h=300&fit=crop" alt="Printers" class="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                <button onclick="filterByCategory('printers')"
+                    class="group relative rounded-3xl overflow-hidden aspect-[4/3] cursor-pointer scroll-reveal text-left bg-[#f5f5f7]"
+                    style="transition-delay: 0.1s;">
+                    <img src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?w=400&h=300&fit=crop"
+                        alt="Printers"
+                        class="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                     <div class="absolute bottom-0 left-0 right-0 p-5">
                         <h3 class="text-white font-semibold text-lg">Printers</h3>
                         <p class="text-white/70 text-sm">156 Products</p>
                     </div>
                 </button>
-                <button onclick="filterByCategory('monitors')" class="group relative rounded-3xl overflow-hidden aspect-[4/3] cursor-pointer scroll-reveal text-left bg-[#f5f5f7]" style="transition-delay: 0.2s;">
-                    <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=400&h=300&fit=crop" alt="Monitors" class="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                <button onclick="filterByCategory('monitors')"
+                    class="group relative rounded-3xl overflow-hidden aspect-[4/3] cursor-pointer scroll-reveal text-left bg-[#f5f5f7]"
+                    style="transition-delay: 0.2s;">
+                    <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=400&h=300&fit=crop"
+                        alt="Monitors"
+                        class="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                     <div class="absolute bottom-0 left-0 right-0 p-5">
                         <h3 class="text-white font-semibold text-lg">Monitors</h3>
                         <p class="text-white/70 text-sm">89 Products</p>
                     </div>
                 </button>
-                <button onclick="filterByCategory('storage')" class="group relative rounded-3xl overflow-hidden aspect-[4/3] cursor-pointer scroll-reveal text-left bg-[#f5f5f7]" style="transition-delay: 0.3s;">
-                    <img src="https://images.unsplash.com/photo-1682948163895-95eef28e96b9?q=80&w=1123&auto=format&fit=crop" alt="Storage" class="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                <button onclick="filterByCategory('storage')"
+                    class="group relative rounded-3xl overflow-hidden aspect-[4/3] cursor-pointer scroll-reveal text-left bg-[#f5f5f7]"
+                    style="transition-delay: 0.3s;">
+                    <img src="https://images.unsplash.com/photo-1682948163895-95eef28e96b9?q=80&w=1123&auto=format&fit=crop"
+                        alt="Storage"
+                        class="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                     <div class="absolute bottom-0 left-0 right-0 p-5">
                         <h3 class="text-white font-semibold text-lg">Storage</h3>
                         <p class="text-white/70 text-sm">124 Products</p>
                     </div>
                 </button>
-                <button onclick="filterByCategory('networking')" class="group relative rounded-3xl overflow-hidden aspect-[4/3] cursor-pointer scroll-reveal text-left bg-[#f5f5f7]" style="transition-delay: 0.4s;">
-                    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=400&h=300&fit=crop" alt="Networking" class="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                <button onclick="filterByCategory('networking')"
+                    class="group relative rounded-3xl overflow-hidden aspect-[4/3] cursor-pointer scroll-reveal text-left bg-[#f5f5f7]"
+                    style="transition-delay: 0.4s;">
+                    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=400&h=300&fit=crop"
+                        alt="Networking"
+                        class="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                     <div class="absolute bottom-0 left-0 right-0 p-5">
                         <h3 class="text-white font-semibold text-lg">Networking</h3>
                         <p class="text-white/70 text-sm">76 Products</p>
                     </div>
                 </button>
-                <button onclick="filterByCategory('phones')" class="group relative rounded-3xl overflow-hidden aspect-[4/3] cursor-pointer scroll-reveal text-left bg-[#f5f5f7]" style="transition-delay: 0.5s;">
-                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=300&fit=crop" alt="Phones" class="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                <button onclick="filterByCategory('phones')"
+                    class="group relative rounded-3xl overflow-hidden aspect-[4/3] cursor-pointer scroll-reveal text-left bg-[#f5f5f7]"
+                    style="transition-delay: 0.5s;">
+                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=300&fit=crop"
+                        alt="Phones"
+                        class="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                     <div class="absolute bottom-0 left-0 right-0 p-5">
                         <h3 class="text-white font-semibold text-lg">Phones</h3>
                         <p class="text-white/70 text-sm">203 Products</p>
                     </div>
                 </button>
-                <button onclick="filterByCategory('accessories')" class="group relative rounded-3xl overflow-hidden aspect-[4/3] cursor-pointer scroll-reveal text-left bg-[#f5f5f7]" style="transition-delay: 0.6s;">
-                    <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400&h=300&fit=crop" alt="Accessories" class="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                <button onclick="filterByCategory('accessories')"
+                    class="group relative rounded-3xl overflow-hidden aspect-[4/3] cursor-pointer scroll-reveal text-left bg-[#f5f5f7]"
+                    style="transition-delay: 0.6s;">
+                    <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400&h=300&fit=crop"
+                        alt="Accessories"
+                        class="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                     <div class="absolute bottom-0 left-0 right-0 p-5">
                         <h3 class="text-white font-semibold text-lg">Accessories</h3>
                         <p class="text-white/70 text-sm">412 Products</p>
                     </div>
                 </button>
-                <button onclick="filterByCategory('furniture')" class="group relative rounded-3xl overflow-hidden aspect-[4/3] cursor-pointer scroll-reveal text-left bg-[#f5f5f7]" style="transition-delay: 0.7s;">
-                    <img src="https://images.unsplash.com/photo-1505843490538-5133c6c7d0e1?w=400&h=300&fit=crop" alt="Furniture" class="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                <button onclick="filterByCategory('furniture')"
+                    class="group relative rounded-3xl overflow-hidden aspect-[4/3] cursor-pointer scroll-reveal text-left bg-[#f5f5f7]"
+                    style="transition-delay: 0.7s;">
+                    <img src="https://images.unsplash.com/photo-1505843490538-5133c6c7d0e1?w=400&h=300&fit=crop"
+                        alt="Furniture"
+                        class="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                     <div class="absolute bottom-0 left-0 right-0 p-5">
                         <h3 class="text-white font-semibold text-lg">Furniture</h3>
@@ -839,7 +1034,8 @@
             <div class="text-center mb-16 scroll-reveal">
                 <p class="text-[#0071e3] text-sm font-semibold mb-2">Why Ekta Digital</p>
                 <h2 class="section-headline">Built for B2B.<br>Designed for You.</h2>
-                <p class="section-subhead mx-auto">Speed, reliability, and savings — everything your business needs to stay productive.</p>
+                <p class="section-subhead mx-auto">Speed, reliability, and savings — everything your business needs to
+                    stay productive.</p>
             </div>
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
                 <div class="feature-card scroll-reveal">
@@ -847,42 +1043,48 @@
                         <i data-lucide="tag" class="w-6 h-6 text-[#0071e3]"></i>
                     </div>
                     <h3 class="text-[#1d1d1f] font-semibold text-lg mb-2">Direct B2B Pricing</h3>
-                    <p class="text-[#86868b] text-sm leading-relaxed">No middlemen. Buy directly from authorized distributors at wholesale prices. Save up to 30% compared to retail.</p>
+                    <p class="text-[#86868b] text-sm leading-relaxed">No middlemen. Buy directly from authorized
+                        distributors at wholesale prices. Save up to 30% compared to retail.</p>
                 </div>
                 <div class="feature-card scroll-reveal" style="transition-delay: 0.1s;">
                     <div class="w-12 h-12 rounded-2xl bg-[#f5f5f7] flex items-center justify-center mb-5">
                         <i data-lucide="percent" class="w-6 h-6 text-[#0071e3]"></i>
                     </div>
                     <h3 class="text-[#1d1d1f] font-semibold text-lg mb-2">Automatic Bulk Discounts</h3>
-                    <p class="text-[#86868b] text-sm leading-relaxed">Tiered pricing automatically applies discounts at 3+, 5+, 10+, and 50+ unit thresholds.</p>
+                    <p class="text-[#86868b] text-sm leading-relaxed">Tiered pricing automatically applies discounts at
+                        3+, 5+, 10+, and 50+ unit thresholds.</p>
                 </div>
                 <div class="feature-card scroll-reveal" style="transition-delay: 0.2s;">
                     <div class="w-12 h-12 rounded-2xl bg-[#f5f5f7] flex items-center justify-center mb-5">
                         <i data-lucide="smartphone" class="w-6 h-6 text-[#0071e3]"></i>
                     </div>
                     <h3 class="text-[#1d1d1f] font-semibold text-lg mb-2">M-Pesa & Card Payments</h3>
-                    <p class="text-[#86868b] text-sm leading-relaxed">Pay instantly with M-Pesa STK Push or use your Visa/Mastercard. Secure, fast checkout every time.</p>
+                    <p class="text-[#86868b] text-sm leading-relaxed">Pay instantly with M-Pesa STK Push or use your
+                        Visa/Mastercard. Secure, fast checkout every time.</p>
                 </div>
                 <div class="feature-card scroll-reveal" style="transition-delay: 0.3s;">
                     <div class="w-12 h-12 rounded-2xl bg-[#f5f5f7] flex items-center justify-center mb-5">
                         <i data-lucide="truck" class="w-6 h-6 text-[#0071e3]"></i>
                     </div>
                     <h3 class="text-[#1d1d1f] font-semibold text-lg mb-2">Same-Day Delivery</h3>
-                    <p class="text-[#86868b] text-sm leading-relaxed">Orders placed before 2 PM delivered same day within Dar es Salaam. Next-day to Arusha, Mbeya, and Mwanza.</p>
+                    <p class="text-[#86868b] text-sm leading-relaxed">Orders placed before 2 PM delivered same day
+                        within Dar es Salaam. Next-day to Arusha, Mbeya, and Mwanza.</p>
                 </div>
                 <div class="feature-card scroll-reveal" style="transition-delay: 0.4s;">
                     <div class="w-12 h-12 rounded-2xl bg-[#f5f5f7] flex items-center justify-center mb-5">
                         <i data-lucide="file-check" class="w-6 h-6 text-[#0071e3]"></i>
                     </div>
                     <h3 class="text-[#1d1d1f] font-semibold text-lg mb-2">Instant Invoicing</h3>
-                    <p class="text-[#86868b] text-sm leading-relaxed">Auto-generated professional invoices with your company branding. Download, email, or print from your dashboard.</p>
+                    <p class="text-[#86868b] text-sm leading-relaxed">Auto-generated professional invoices with your
+                        company branding. Download, email, or print from your dashboard.</p>
                 </div>
                 <div class="feature-card scroll-reveal" style="transition-delay: 0.5s;">
                     <div class="w-12 h-12 rounded-2xl bg-[#f5f5f7] flex items-center justify-center mb-5">
                         <i data-lucide="headphones" class="w-6 h-6 text-[#0071e3]"></i>
                     </div>
                     <h3 class="text-[#1d1d1f] font-semibold text-lg mb-2">Dedicated Support</h3>
-                    <p class="text-[#86868b] text-sm leading-relaxed">Our B2B team is available via phone, WhatsApp, and email. Get expert advice on product selection.</p>
+                    <p class="text-[#86868b] text-sm leading-relaxed">Our B2B team is available via phone, WhatsApp, and
+                        email. Get expert advice on product selection.</p>
                 </div>
             </div>
         </div>
@@ -917,17 +1119,20 @@
         <div class="max-w-[1024px] mx-auto px-6 lg:px-8 relative z-10">
             <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                 <div class="scroll-reveal">
-                    <p class="text-[#86868b] text-sm font-semibold mb-3 uppercase tracking-wide">Bulk & Corporate Orders</p>
+                    <p class="text-[#86868b] text-sm font-semibold mb-3 uppercase tracking-wide">Bulk & Corporate Orders
+                    </p>
                     <h2 class="text-4xl lg:text-5xl font-semibold mb-4 tracking-tight leading-tight">
                         Need 10+ Units?<br>
                         <span class="text-[#86868b]">Let's Talk Numbers.</span>
                     </h2>
                     <p class="text-[#86868b] text-base leading-relaxed mb-8">
-                        Whether you're outfitting a new office, upgrading your team's equipment, or stocking up for a project — our corporate sales team will craft a custom quote with volume pricing.
+                        Whether you're outfitting a new office, upgrading your team's equipment, or stocking up for a
+                        project — our corporate sales team will craft a custom quote with volume pricing.
                     </p>
                     <div class="space-y-4 mb-8">
                         <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 rounded-full bg-[#0071e3] flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <div
+                                class="w-6 h-6 rounded-full bg-[#0071e3] flex items-center justify-center flex-shrink-0 mt-0.5">
                                 <i data-lucide="check" class="w-3 h-3 text-white"></i>
                             </div>
                             <div>
@@ -936,21 +1141,25 @@
                             </div>
                         </div>
                         <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 rounded-full bg-[#0071e3] flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <div
+                                class="w-6 h-6 rounded-full bg-[#0071e3] flex items-center justify-center flex-shrink-0 mt-0.5">
                                 <i data-lucide="check" class="w-3 h-3 text-white"></i>
                             </div>
                             <div>
                                 <h4 class="text-white font-medium text-sm">Net 30 / Net 60 Payment Terms</h4>
-                                <p class="text-[#86868b] text-xs">Approved corporate accounts get flexible payment schedules.</p>
+                                <p class="text-[#86868b] text-xs">Approved corporate accounts get flexible payment
+                                    schedules.</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 rounded-full bg-[#0071e3] flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <div
+                                class="w-6 h-6 rounded-full bg-[#0071e3] flex items-center justify-center flex-shrink-0 mt-0.5">
                                 <i data-lucide="check" class="w-3 h-3 text-white"></i>
                             </div>
                             <div>
                                 <h4 class="text-white font-medium text-sm">Dedicated Account Manager</h4>
-                                <p class="text-[#86868b] text-xs">A single point of contact for all your procurement needs.</p>
+                                <p class="text-[#86868b] text-xs">A single point of contact for all your procurement
+                                    needs.</p>
                             </div>
                         </div>
                     </div>
@@ -958,7 +1167,8 @@
                         <button onclick="showQuoteModal()" class="apple-btn justify-center py-3.5">
                             <i data-lucide="file-text" class="w-4 h-4"></i>Request a Quote
                         </button>
-                        <a href="tel:0700123456" class="inline-flex items-center justify-center gap-2 text-white/80 hover:text-white text-sm font-medium py-3.5 px-6 rounded-full border border-white/20 hover:border-white/40 transition-all">
+                        <a href="tel:0700123456"
+                            class="inline-flex items-center justify-center gap-2 text-white/80 hover:text-white text-sm font-medium py-3.5 px-6 rounded-full border border-white/20 hover:border-white/40 transition-all">
                             <i data-lucide="phone" class="w-4 h-4"></i>0700 123 456
                         </a>
                     </div>
@@ -977,22 +1187,26 @@
                         <div class="space-y-3">
                             <div>
                                 <label class="text-[#86868b] text-xs mb-1 block">Company Name</label>
-                                <input type="text" placeholder="e.g. Acme Corporation" class="w-full bg-[#1d1d1f] border border-white/10 rounded-xl px-4 py-2.5 text-sm text-white placeholder-[#86868b] focus:outline-none focus:border-[#0071e3] transition-all">
+                                <input type="text" placeholder="e.g. Acme Corporation"
+                                    class="w-full bg-[#1d1d1f] border border-white/10 rounded-xl px-4 py-2.5 text-sm text-white placeholder-[#86868b] focus:outline-none focus:border-[#0071e3] transition-all">
                             </div>
                             <div>
                                 <label class="text-[#86868b] text-xs mb-1 block">Email Address</label>
-                                <input type="email" placeholder="procurement@company.co.ke" class="w-full bg-[#1d1d1f] border border-white/10 rounded-xl px-4 py-2.5 text-sm text-white placeholder-[#86868b] focus:outline-none focus:border-[#0071e3] transition-all">
+                                <input type="email" placeholder="procurement@company.co.ke"
+                                    class="w-full bg-[#1d1d1f] border border-white/10 rounded-xl px-4 py-2.5 text-sm text-white placeholder-[#86868b] focus:outline-none focus:border-[#0071e3] transition-all">
                             </div>
                             <div>
                                 <label class="text-[#86868b] text-xs mb-1 block">What do you need?</label>
-                                <textarea placeholder="Tell us about your project..." rows="3" class="w-full bg-[#1d1d1f] border border-white/10 rounded-xl px-4 py-2.5 text-sm text-white placeholder-[#86868b] focus:outline-none focus:border-[#0071e3] transition-all resize-none"></textarea>
+                                <textarea placeholder="Tell us about your project..." rows="3"
+                                    class="w-full bg-[#1d1d1f] border border-white/10 rounded-xl px-4 py-2.5 text-sm text-white placeholder-[#86868b] focus:outline-none focus:border-[#0071e3] transition-all resize-none"></textarea>
                             </div>
                             <button onclick="submitQuote()" class="w-full apple-btn justify-center py-3">
                                 <i data-lucide="send" class="w-4 h-4"></i>Submit Quote Request
                             </button>
                         </div>
                     </div>
-                    <div class="absolute -top-3 -right-3 bg-green-500/10 border border-green-500/20 rounded-xl px-3 py-2 backdrop-blur-sm">
+                    <div
+                        class="absolute -top-3 -right-3 bg-green-500/10 border border-green-500/20 rounded-xl px-3 py-2 backdrop-blur-sm">
                         <div class="flex items-center gap-2">
                             <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
                             <span class="text-green-400 text-xs font-medium">Avg. Response: 4 Hours</span>
@@ -1019,9 +1233,12 @@
                         <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                         <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                     </div>
-                    <p class="text-[#1d1d1f] text-sm leading-relaxed mb-6">"Ekta Digital transformed our procurement process. We saved 35% on our annual IT budget and the same-day delivery is a game-changer."</p>
+                    <p class="text-[#1d1d1f] text-sm leading-relaxed mb-6">"Ekta Digital transformed our procurement
+                        process. We saved 35% on our annual IT budget and the same-day delivery is a game-changer."</p>
                     <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-full bg-[#1d1d1f] flex items-center justify-center text-white text-sm font-semibold">JM</div>
+                        <div
+                            class="w-10 h-10 rounded-full bg-[#1d1d1f] flex items-center justify-center text-white text-sm font-semibold">
+                            JM</div>
                         <div>
                             <h4 class="text-[#1d1d1f] font-semibold text-sm">James Mwangi</h4>
                             <p class="text-[#86868b] text-xs">IT Director, Tanzania Power</p>
@@ -1036,9 +1253,13 @@
                         <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                         <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                     </div>
-                    <p class="text-[#1d1d1f] text-sm leading-relaxed mb-6">"The M-Pesa integration makes payments seamless for our finance team. Bulk pricing is transparent and the account manager understands our needs perfectly."</p>
+                    <p class="text-[#1d1d1f] text-sm leading-relaxed mb-6">"The M-Pesa integration makes payments
+                        seamless for our finance team. Bulk pricing is transparent and the account manager understands
+                        our needs perfectly."</p>
                     <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-full bg-[#0071e3] flex items-center justify-center text-white text-sm font-semibold">SO</div>
+                        <div
+                            class="w-10 h-10 rounded-full bg-[#0071e3] flex items-center justify-center text-white text-sm font-semibold">
+                            SO</div>
                         <div>
                             <h4 class="text-[#1d1d1f] font-semibold text-sm">Sarah Ochieng</h4>
                             <p class="text-[#86868b] text-xs">Procurement Manager, Andela</p>
@@ -1053,9 +1274,12 @@
                         <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                         <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                     </div>
-                    <p class="text-[#1d1d1f] text-sm leading-relaxed mb-6">"We outfitted 3 new offices in 2 weeks. The white-glove setup service meant our teams were productive from day one. Highly recommended."</p>
+                    <p class="text-[#1d1d1f] text-sm leading-relaxed mb-6">"We outfitted 3 new offices in 2 weeks. The
+                        white-glove setup service meant our teams were productive from day one. Highly recommended."</p>
                     <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-full bg-green-600 flex items-center justify-center text-white text-sm font-semibold">DK</div>
+                        <div
+                            class="w-10 h-10 rounded-full bg-green-600 flex items-center justify-center text-white text-sm font-semibold">
+                            DK</div>
                         <div>
                             <h4 class="text-[#1d1d1f] font-semibold text-sm">David Kimani</h4>
                             <p class="text-[#86868b] text-xs">CEO, Twiga Foods</p>
@@ -1075,28 +1299,32 @@
             </div>
             <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
                 <div class="text-center scroll-reveal">
-                    <div class="w-14 h-14 rounded-full bg-white flex items-center justify-center mx-auto mb-4 shadow-sm">
+                    <div
+                        class="w-14 h-14 rounded-full bg-white flex items-center justify-center mx-auto mb-4 shadow-sm">
                         <span class="text-xl font-semibold text-[#1d1d1f]">1</span>
                     </div>
                     <h3 class="text-[#1d1d1f] font-semibold mb-1">Browse & Select</h3>
                     <p class="text-[#86868b] text-sm">Explore products with detailed specs and real-time stock.</p>
                 </div>
                 <div class="text-center scroll-reveal" style="transition-delay: 0.1s;">
-                    <div class="w-14 h-14 rounded-full bg-white flex items-center justify-center mx-auto mb-4 shadow-sm">
+                    <div
+                        class="w-14 h-14 rounded-full bg-white flex items-center justify-center mx-auto mb-4 shadow-sm">
                         <span class="text-xl font-semibold text-[#1d1d1f]">2</span>
                     </div>
                     <h3 class="text-[#1d1d1f] font-semibold mb-1">Add to Cart</h3>
                     <p class="text-[#86868b] text-sm">Build your order with automatic bulk discounts.</p>
                 </div>
                 <div class="text-center scroll-reveal" style="transition-delay: 0.2s;">
-                    <div class="w-14 h-14 rounded-full bg-white flex items-center justify-center mx-auto mb-4 shadow-sm">
+                    <div
+                        class="w-14 h-14 rounded-full bg-white flex items-center justify-center mx-auto mb-4 shadow-sm">
                         <span class="text-xl font-semibold text-[#1d1d1f]">3</span>
                     </div>
                     <h3 class="text-[#1d1d1f] font-semibold mb-1">Pay Securely</h3>
                     <p class="text-[#86868b] text-sm">Checkout with M-Pesa STK Push or card.</p>
                 </div>
                 <div class="text-center scroll-reveal" style="transition-delay: 0.3s;">
-                    <div class="w-14 h-14 rounded-full bg-white flex items-center justify-center mx-auto mb-4 shadow-sm">
+                    <div
+                        class="w-14 h-14 rounded-full bg-white flex items-center justify-center mx-auto mb-4 shadow-sm">
                         <span class="text-xl font-semibold text-[#1d1d1f]">4</span>
                     </div>
                     <h3 class="text-[#1d1d1f] font-semibold mb-1">Receive & Invoice</h3>
@@ -1111,9 +1339,11 @@
         <div class="max-w-[600px] mx-auto px-6 lg:px-8 text-center scroll-reveal">
             <p class="text-[#0071e3] text-sm font-semibold mb-2">Stay Updated</p>
             <h2 class="section-headline mb-3">Never Miss a Deal</h2>
-            <p class="text-[#86868b] text-base mb-8">Join 3,000+ procurement professionals who get exclusive B2B deals and new product alerts.</p>
+            <p class="text-[#86868b] text-base mb-8">Join 3,000+ procurement professionals who get exclusive B2B deals
+                and new product alerts.</p>
             <div class="flex flex-col sm:flex-row gap-3">
-                <input type="email" placeholder="Enter your business email" class="flex-1 bg-[#f5f5f7] border border-[#d2d2d7] rounded-full px-6 py-3 text-sm text-[#1d1d1f] placeholder-[#86868b] focus:outline-none focus:border-[#0071e3] transition-all">
+                <input type="email" placeholder="Enter your business email"
+                    class="flex-1 bg-[#f5f5f7] border border-[#d2d2d7] rounded-full px-6 py-3 text-sm text-[#1d1d1f] placeholder-[#86868b] focus:outline-none focus:border-[#0071e3] transition-all">
                 <button onclick="subscribeNewsletter()" class="apple-btn justify-center whitespace-nowrap">
                     <i data-lucide="mail" class="w-4 h-4"></i>Subscribe
                 </button>
@@ -1133,36 +1363,57 @@
                         </div>
                         <span class="font-semibold text-sm text-[#1d1d1f]">Ekta Digital</span>
                     </a>
-                    <p class="text-[#86868b] text-xs leading-relaxed mb-4">Your trusted B2B partner for premium office electronics in Tanzania. Direct pricing, bulk discounts, and enterprise-grade support.</p>
+                    <p class="text-[#86868b] text-xs leading-relaxed mb-4">Your trusted B2B partner for premium office
+                        electronics in Tanzania. Direct pricing, bulk discounts, and enterprise-grade support.</p>
                 </div>
                 <div>
                     <h4 class="text-[#1d1d1f] font-semibold mb-4 text-xs">Products</h4>
                     <ul class="space-y-2.5">
-                        <li><a href="#" onclick="filterByCategory('laptops')" class="text-[#86868b] hover:text-[#1d1d1f] text-xs transition-colors">Laptops & Computers</a></li>
-                        <li><a href="#" onclick="filterByCategory('printers')" class="text-[#86868b] hover:text-[#1d1d1f] text-xs transition-colors">Printers & Scanners</a></li>
-                        <li><a href="#" onclick="filterByCategory('monitors')" class="text-[#86868b] hover:text-[#1d1d1f] text-xs transition-colors">Monitors & Displays</a></li>
-                        <li><a href="#" onclick="filterByCategory('networking')" class="text-[#86868b] hover:text-[#1d1d1f] text-xs transition-colors">Networking Equipment</a></li>
-                        <li><a href="#" onclick="filterByCategory('furniture')" class="text-[#86868b] hover:text-[#1d1d1f] text-xs transition-colors">Office Furniture</a></li>
+                        <li><a href="#" onclick="filterByCategory('laptops')"
+                                class="text-[#86868b] hover:text-[#1d1d1f] text-xs transition-colors">Laptops &
+                                Computers</a></li>
+                        <li><a href="#" onclick="filterByCategory('printers')"
+                                class="text-[#86868b] hover:text-[#1d1d1f] text-xs transition-colors">Printers &
+                                Scanners</a></li>
+                        <li><a href="#" onclick="filterByCategory('monitors')"
+                                class="text-[#86868b] hover:text-[#1d1d1f] text-xs transition-colors">Monitors &
+                                Displays</a></li>
+                        <li><a href="#" onclick="filterByCategory('networking')"
+                                class="text-[#86868b] hover:text-[#1d1d1f] text-xs transition-colors">Networking
+                                Equipment</a></li>
+                        <li><a href="#" onclick="filterByCategory('furniture')"
+                                class="text-[#86868b] hover:text-[#1d1d1f] text-xs transition-colors">Office
+                                Furniture</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-[#1d1d1f] font-semibold mb-4 text-xs">Company</h4>
                     <ul class="space-y-2.5">
-                        <li><a href="#about" class="text-[#86868b] hover:text-[#1d1d1f] text-xs transition-colors">About Us</a></li>
-                        <li><a href="#" class="text-[#86868b] hover:text-[#1d1d1f] text-xs transition-colors">Careers</a></li>
-                        <li><a href="#" class="text-[#86868b] hover:text-[#1d1d1f] text-xs transition-colors">Press & Media</a></li>
-                        <li><a href="#" class="text-[#86868b] hover:text-[#1d1d1f] text-xs transition-colors">Partners</a></li>
-                        <li><a href="#" class="text-[#86868b] hover:text-[#1d1d1f] text-xs transition-colors">Contact</a></li>
+                        <li><a href="#about" class="text-[#86868b] hover:text-[#1d1d1f] text-xs transition-colors">About
+                                Us</a></li>
+                        <li><a href="#"
+                                class="text-[#86868b] hover:text-[#1d1d1f] text-xs transition-colors">Careers</a></li>
+                        <li><a href="#" class="text-[#86868b] hover:text-[#1d1d1f] text-xs transition-colors">Press &
+                                Media</a></li>
+                        <li><a href="#"
+                                class="text-[#86868b] hover:text-[#1d1d1f] text-xs transition-colors">Partners</a></li>
+                        <li><a href="#"
+                                class="text-[#86868b] hover:text-[#1d1d1f] text-xs transition-colors">Contact</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-[#1d1d1f] font-semibold mb-4 text-xs">Support</h4>
                     <ul class="space-y-2.5">
-                        <li><a href="#" class="text-[#86868b] hover:text-[#1d1d1f] text-xs transition-colors">Help Center</a></li>
-                        <li><a href="#" class="text-[#86868b] hover:text-[#1d1d1f] text-xs transition-colors">Shipping Info</a></li>
-                        <li><a href="#" class="text-[#86868b] hover:text-[#1d1d1f] text-xs transition-colors">Returns & Refunds</a></li>
-                        <li><a href="#" class="text-[#86868b] hover:text-[#1d1d1f] text-xs transition-colors">Warranty Policy</a></li>
-                        <li><a href="#" class="text-[#86868b] hover:text-[#1d1d1f] text-xs transition-colors">Bulk Order FAQ</a></li>
+                        <li><a href="#" class="text-[#86868b] hover:text-[#1d1d1f] text-xs transition-colors">Help
+                                Center</a></li>
+                        <li><a href="#" class="text-[#86868b] hover:text-[#1d1d1f] text-xs transition-colors">Shipping
+                                Info</a></li>
+                        <li><a href="#" class="text-[#86868b] hover:text-[#1d1d1f] text-xs transition-colors">Returns &
+                                Refunds</a></li>
+                        <li><a href="#" class="text-[#86868b] hover:text-[#1d1d1f] text-xs transition-colors">Warranty
+                                Policy</a></li>
+                        <li><a href="#" class="text-[#86868b] hover:text-[#1d1d1f] text-xs transition-colors">Bulk Order
+                                FAQ</a></li>
                     </ul>
                 </div>
                 <div>
@@ -1206,7 +1457,8 @@
                 <p class="text-[#86868b] text-xs"> Ekta Digital. All rights reserved.</p>
                 <div class="flex items-center gap-6">
                     <a href="#" class="text-[#86868b] hover:text-[#1d1d1f] text-xs transition-colors">Privacy Policy</a>
-                    <a href="#" class="text-[#86868b] hover:text-[#1d1d1f] text-xs transition-colors">Terms of Service</a>
+                    <a href="#" class="text-[#86868b] hover:text-[#1d1d1f] text-xs transition-colors">Terms of
+                        Service</a>
                     <a href="#" class="text-[#86868b] hover:text-[#1d1d1f] text-xs transition-colors">Cookie Policy</a>
                 </div>
             </div>
@@ -1214,7 +1466,8 @@
     </footer>
 
     <!-- Product Detail Modal -->
-    <div id="productModal" class="modal-apple fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/40 backdrop-blur-md">
+    <div id="productModal"
+        class="modal-apple fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/40 backdrop-blur-md">
         <div class="modal-content-apple bg-white rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
             <div id="productModalBody" class="p-6 lg:p-10">
             </div>
@@ -1222,30 +1475,35 @@
     </div>
 
     <!-- Auth Modal -->
-    <div id="authModal" class="modal-apple fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/40 backdrop-blur-md">
+    <div id="authModal"
+        class="modal-apple fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/40 backdrop-blur-md">
         <div class="modal-content-apple bg-white rounded-3xl max-w-md w-full shadow-2xl">
             <div class="p-8">
                 <div class="flex items-center justify-between mb-6">
                     <h2 class="font-semibold text-2xl text-[#1d1d1f]">Welcome Back</h2>
-                    <button onclick="closeAuthModal()" class="p-2 text-[#86868b] hover:text-[#1d1d1f] rounded-full hover:bg-[#f5f5f7] transition-colors">
+                    <button onclick="closeAuthModal()"
+                        class="p-2 text-[#86868b] hover:text-[#1d1d1f] rounded-full hover:bg-[#f5f5f7] transition-colors">
                         <i data-lucide="x" class="w-5 h-5"></i>
                     </button>
                 </div>
                 <div class="space-y-4">
                     <div>
                         <label class="text-[#86868b] text-xs mb-1.5 block font-medium">Email Address</label>
-                        <input type="email" placeholder="you@company.co.ke" class="w-full bg-[#f5f5f7] border border-[#d2d2d7] rounded-xl px-4 py-3 text-sm text-[#1d1d1f] placeholder-[#86868b] focus:outline-none focus:border-[#0071e3] focus:ring-2 focus:ring-[#0071e3]/10 transition-all">
+                        <input type="email" placeholder="you@company.co.ke"
+                            class="w-full bg-[#f5f5f7] border border-[#d2d2d7] rounded-xl px-4 py-3 text-sm text-[#1d1d1f] placeholder-[#86868b] focus:outline-none focus:border-[#0071e3] focus:ring-2 focus:ring-[#0071e3]/10 transition-all">
                     </div>
                     <div>
                         <label class="text-[#86868b] text-xs mb-1.5 block font-medium">Password</label>
-                        <input type="password" placeholder="Enter your password" class="w-full bg-[#f5f5f7] border border-[#d2d2d7] rounded-xl px-4 py-3 text-sm text-[#1d1d1f] placeholder-[#86868b] focus:outline-none focus:border-[#0071e3] focus:ring-2 focus:ring-[#0071e3]/10 transition-all">
+                        <input type="password" placeholder="Enter your password"
+                            class="w-full bg-[#f5f5f7] border border-[#d2d2d7] rounded-xl px-4 py-3 text-sm text-[#1d1d1f] placeholder-[#86868b] focus:outline-none focus:border-[#0071e3] focus:ring-2 focus:ring-[#0071e3]/10 transition-all">
                     </div>
                     <button onclick="loginUser()" class="w-full apple-btn justify-center py-3.5">Sign In</button>
                     <div class="text-center">
                         <a href="#" class="text-[#0071e3] text-sm hover:underline">Forgot password?</a>
                     </div>
                     <div class="border-t border-[#f0f0f0] pt-4 text-center">
-                        <p class="text-[#86868b] text-sm">Don't have an account? <a href="#" class="text-[#0071e3] font-medium hover:underline">Create one</a></p>
+                        <p class="text-[#86868b] text-sm">Don't have an account? <a href="#"
+                                class="text-[#0071e3] font-medium hover:underline">Create one</a></p>
                     </div>
                 </div>
             </div>
@@ -1253,19 +1511,22 @@
     </div>
 
     <!-- Quote Success Modal -->
-    <div id="quoteSuccessModal" class="modal-apple fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/40 backdrop-blur-md">
+    <div id="quoteSuccessModal"
+        class="modal-apple fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/40 backdrop-blur-md">
         <div class="modal-content-apple bg-white rounded-3xl max-w-sm w-full shadow-2xl text-center p-8">
             <div class="w-16 h-16 bg-[#f5f5f7] rounded-full flex items-center justify-center mx-auto mb-4">
                 <i data-lucide="check-circle" class="w-8 h-8 text-green-500"></i>
             </div>
             <h3 class="font-semibold text-xl text-[#1d1d1f] mb-2">Quote Request Sent!</h3>
-            <p class="text-[#86868b] text-sm mb-6">Our sales team will review your request and get back to you within 4 hours with a custom quote.</p>
+            <p class="text-[#86868b] text-sm mb-6">Our sales team will review your request and get back to you within 4
+                hours with a custom quote.</p>
             <button onclick="closeQuoteSuccess()" class="apple-btn w-full justify-center">Got it!</button>
         </div>
     </div>
 
     <!-- Checkout Modal -->
-    <div id="checkoutModal" class="modal-apple fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/40 backdrop-blur-md">
+    <div id="checkoutModal"
+        class="modal-apple fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/40 backdrop-blur-md">
         <div class="modal-content-apple bg-white rounded-3xl max-w-lg w-full shadow-2xl max-h-[90vh] overflow-y-auto">
             <div class="p-8">
                 <div class="flex items-center justify-between mb-6">
@@ -1278,7 +1539,8 @@
                             <p class="text-[#86868b] text-xs">Complete your order securely</p>
                         </div>
                     </div>
-                    <button onclick="closeCheckout()" class="p-2 text-[#86868b] hover:text-[#1d1d1f] rounded-full hover:bg-[#f5f5f7] transition-colors">
+                    <button onclick="closeCheckout()"
+                        class="p-2 text-[#86868b] hover:text-[#1d1d1f] rounded-full hover:bg-[#f5f5f7] transition-colors">
                         <i data-lucide="x" class="w-5 h-5"></i>
                     </button>
                 </div>
@@ -1298,7 +1560,8 @@
                             <span class="text-[#86868b]">Tax (16% VAT)</span>
                             <span id="checkoutTax" class="font-medium text-[#1d1d1f]">KES 0</span>
                         </div>
-                        <div class="flex justify-between font-semibold text-[#1d1d1f] text-lg mt-2 pt-2 border-t border-[#d2d2d7]">
+                        <div
+                            class="flex justify-between font-semibold text-[#1d1d1f] text-lg mt-2 pt-2 border-t border-[#d2d2d7]">
                             <span>Total</span>
                             <span id="checkoutTotal">KES 0</span>
                         </div>
@@ -1308,34 +1571,34 @@
                 <div class="space-y-4">
                     <div>
                         <label class="text-[#86868b] text-xs font-medium mb-1.5 block">Full Name *</label>
-                        <input type="text" id="checkoutName" placeholder="John Doe" 
-                               class="w-full bg-[#f5f5f7] border border-[#d2d2d7] rounded-xl px-4 py-3 text-sm text-[#1d1d1f] placeholder-[#86868b] focus:outline-none focus:border-[#0071e3] focus:ring-2 focus:ring-[#0071e3]/10 transition-all checkout-input">
+                        <input type="text" id="checkoutName" placeholder="John Doe"
+                            class="w-full bg-[#f5f5f7] border border-[#d2d2d7] rounded-xl px-4 py-3 text-sm text-[#1d1d1f] placeholder-[#86868b] focus:outline-none focus:border-[#0071e3] focus:ring-2 focus:ring-[#0071e3]/10 transition-all checkout-input">
                     </div>
                     <div>
                         <label class="text-[#86868b] text-xs font-medium mb-1.5 block">Email Address *</label>
-                        <input type="email" id="checkoutEmail" placeholder="john@company.co.ke" 
-                               class="w-full bg-[#f5f5f7] border border-[#d2d2d7] rounded-xl px-4 py-3 text-sm text-[#1d1d1f] placeholder-[#86868b] focus:outline-none focus:border-[#0071e3] focus:ring-2 focus:ring-[#0071e3]/10 transition-all checkout-input">
+                        <input type="email" id="checkoutEmail" placeholder="john@company.co.ke"
+                            class="w-full bg-[#f5f5f7] border border-[#d2d2d7] rounded-xl px-4 py-3 text-sm text-[#1d1d1f] placeholder-[#86868b] focus:outline-none focus:border-[#0071e3] focus:ring-2 focus:ring-[#0071e3]/10 transition-all checkout-input">
                     </div>
                     <div>
                         <label class="text-[#86868b] text-xs font-medium mb-1.5 block">Phone Number *</label>
-                        <input type="tel" id="checkoutPhone" placeholder="+254 700 123 456" 
-                               class="w-full bg-[#f5f5f7] border border-[#d2d2d7] rounded-xl px-4 py-3 text-sm text-[#1d1d1f] placeholder-[#86868b] focus:outline-none focus:border-[#0071e3] focus:ring-2 focus:ring-[#0071e3]/10 transition-all checkout-input">
+                        <input type="tel" id="checkoutPhone" placeholder="+254 700 123 456"
+                            class="w-full bg-[#f5f5f7] border border-[#d2d2d7] rounded-xl px-4 py-3 text-sm text-[#1d1d1f] placeholder-[#86868b] focus:outline-none focus:border-[#0071e3] focus:ring-2 focus:ring-[#0071e3]/10 transition-all checkout-input">
                     </div>
                     <div>
                         <label class="text-[#86868b] text-xs font-medium mb-1.5 block">Delivery Address *</label>
-                        <textarea id="checkoutAddress" placeholder="Enter your complete delivery address..." rows="2" 
-                                  class="w-full bg-[#f5f5f7] border border-[#d2d2d7] rounded-xl px-4 py-3 text-sm text-[#1d1d1f] placeholder-[#86868b] focus:outline-none focus:border-[#0071e3] focus:ring-2 focus:ring-[#0071e3]/10 transition-all resize-none checkout-input"></textarea>
+                        <textarea id="checkoutAddress" placeholder="Enter your complete delivery address..." rows="2"
+                            class="w-full bg-[#f5f5f7] border border-[#d2d2d7] rounded-xl px-4 py-3 text-sm text-[#1d1d1f] placeholder-[#86868b] focus:outline-none focus:border-[#0071e3] focus:ring-2 focus:ring-[#0071e3]/10 transition-all resize-none checkout-input"></textarea>
                     </div>
 
                     <div>
                         <label class="text-[#86868b] text-xs font-medium mb-2 block">Payment Method</label>
                         <div class="grid grid-cols-2 gap-3">
-                            <button type="button" id="mpesaBtn" onclick="selectPayment('mpesa')" 
-                                    class="flex items-center gap-2 px-4 py-3 rounded-xl border-2 border-[#0071e3] bg-[#0071e3]/5 text-[#0071e3] font-medium text-sm transition-all">
+                            <button type="button" id="mpesaBtn" onclick="selectPayment('mpesa')"
+                                class="flex items-center gap-2 px-4 py-3 rounded-xl border-2 border-[#0071e3] bg-[#0071e3]/5 text-[#0071e3] font-medium text-sm transition-all">
                                 <i data-lucide="smartphone" class="w-5 h-5"></i>M-Pesa
                             </button>
-                            <button type="button" id="cardBtn" onclick="selectPayment('card')" 
-                                    class="flex items-center gap-2 px-4 py-3 rounded-xl border border-[#d2d2d7] text-[#86868b] font-medium text-sm hover:border-[#0071e3] transition-all">
+                            <button type="button" id="cardBtn" onclick="selectPayment('card')"
+                                class="flex items-center gap-2 px-4 py-3 rounded-xl border border-[#d2d2d7] text-[#86868b] font-medium text-sm hover:border-[#0071e3] transition-all">
                                 <i data-lucide="credit-card" class="w-5 h-5"></i>Card
                             </button>
                         </div>
@@ -1355,18 +1618,24 @@
     </div>
 
     <!-- Order Success Modal -->
-    <div id="orderSuccessModal" class="modal-apple fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/50 backdrop-blur-md">
+    <div id="orderSuccessModal"
+        class="modal-apple fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/50 backdrop-blur-md">
         <div class="modal-content-apple bg-white rounded-3xl max-w-md w-full shadow-2xl overflow-hidden">
             <div class="bg-[#1d1d1f] p-8 text-center relative overflow-hidden">
-                <div class="w-20 h-20 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-white/30" style="animation: successPop 0.5s cubic-bezier(0.34,1.56,0.64,1) 0.1s both;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <div class="w-20 h-20 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-white/30"
+                    style="animation: successPop 0.5s cubic-bezier(0.34,1.56,0.64,1) 0.1s both;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                        stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
                 </div>
                 <h3 class="font-semibold text-2xl text-white mb-1">Order Confirmed!</h3>
                 <p class="text-white/60 text-sm">Thank you for shopping with Ekta Digital</p>
             </div>
             <div class="p-6">
                 <div class="text-center mb-5">
-                    <span class="inline-flex items-center gap-2 bg-[#f5f5f7] text-[#1d1d1f] font-semibold text-sm px-4 py-2 rounded-full">
+                    <span
+                        class="inline-flex items-center gap-2 bg-[#f5f5f7] text-[#1d1d1f] font-semibold text-sm px-4 py-2 rounded-full">
                         Order <span id="orderNumber">#OT-78432</span>
                     </span>
                 </div>
@@ -1386,14 +1655,17 @@
                         <span id="successTotal" class="font-bold text-[#1d1d1f] text-base">KES 0</span>
                     </div>
                 </div>
-                <p class="text-[#86868b] text-sm text-center mb-5 leading-relaxed" id="successMessage">You will receive a payment prompt shortly.</p>
-                <button onclick="closeOrderSuccess()" class="w-full apple-btn justify-center py-4 text-base">Continue Shopping</button>
+                <p class="text-[#86868b] text-sm text-center mb-5 leading-relaxed" id="successMessage">You will receive
+                    a payment prompt shortly.</p>
+                <button onclick="closeOrderSuccess()" class="w-full apple-btn justify-center py-4 text-base">Continue
+                    Shopping</button>
             </div>
         </div>
     </div>
 
     <!-- Toast Notification -->
-    <div id="toast" class="toast-apple fixed bottom-6 right-6 z-50 bg-[#1d1d1f] text-white px-5 py-4 rounded-2xl shadow-2xl flex items-center gap-3 max-w-sm w-[calc(100%-3rem)] sm:w-auto">
+    <div id="toast"
+        class="toast-apple fixed bottom-6 right-6 z-50 bg-[#1d1d1f] text-white px-5 py-4 rounded-2xl shadow-2xl flex items-center gap-3 max-w-sm w-[calc(100%-3rem)] sm:w-auto">
         <div id="toastIcon" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
             <i data-lucide="check" class="w-4 h-4 text-green-400"></i>
         </div>
@@ -1626,29 +1898,29 @@
             renderProducts();
         }
 
-        
-function forceRevealVisibleCards() {
-    document.querySelectorAll('#productsGrid .scroll-reveal:not(.revealed)').forEach(el => {
-        const rect = el.getBoundingClientRect();
-        if (rect.top < window.innerHeight && rect.bottom > 0) {
-            el.classList.add('revealed');
+
+        function forceRevealVisibleCards() {
+            document.querySelectorAll('#productsGrid .scroll-reveal:not(.revealed)').forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    el.classList.add('revealed');
+                }
+            });
         }
-    });
-}
 
-function observeProductCards() {
-    if (observer) {
-        document.querySelectorAll('#productsGrid .scroll-reveal').forEach(el => {
-            observer.observe(el);
-        });
-    }
-    // Fallback: immediately reveal cards that are already visible
-    setTimeout(forceRevealVisibleCards, 50);
-}
+        function observeProductCards() {
+            if (observer) {
+                document.querySelectorAll('#productsGrid .scroll-reveal').forEach(el => {
+                    observer.observe(el);
+                });
+            }
+            // Fallback: immediately reveal cards that are already visible
+            setTimeout(forceRevealVisibleCards, 50);
+        }
 
-function renderProducts() {
+        function renderProducts() {
             const grid = document.getElementById('productsGrid');
-            const filtered = currentCategory === 'all' 
+            const filtered = currentCategory === 'all'
                 ? products.slice(0, displayedProducts)
                 : products.filter(p => p.category === currentCategory);
 
@@ -1671,15 +1943,15 @@ function renderProducts() {
         }
 
         function createProductCard(product) {
-            const badgeHTML = product.badge === 'hot' 
+            const badgeHTML = product.badge === 'hot'
                 ? '<span class="bg-[#ff3b30] text-white text-[10px] font-semibold px-2 py-0.5 rounded-full">Hot</span>'
                 : product.badge === 'new'
-                ? '<span class="bg-[#0071e3] text-white text-[10px] font-semibold px-2 py-0.5 rounded-full">New</span>'
-                : product.badge === 'bulk'
-                ? `<span class="bg-[#1d1d1f] text-white text-[10px] font-semibold px-2 py-0.5 rounded-full">${product.discount}</span>`
-                : '<span class="bg-[#34c759] text-white text-[10px] font-semibold px-2 py-0.5 rounded-full">In Stock</span>';
+                    ? '<span class="bg-[#0071e3] text-white text-[10px] font-semibold px-2 py-0.5 rounded-full">New</span>'
+                    : product.badge === 'bulk'
+                        ? `<span class="bg-[#1d1d1f] text-white text-[10px] font-semibold px-2 py-0.5 rounded-full">${product.discount}</span>`
+                        : '<span class="bg-[#34c759] text-white text-[10px] font-semibold px-2 py-0.5 rounded-full">In Stock</span>';
 
-            const stars = Array(5).fill(0).map((_, i) => 
+            const stars = Array(5).fill(0).map((_, i) =>
                 `<i data-lucide="star" class="w-3 h-3 ${i < product.rating ? 'fill-current text-amber-400' : 'text-[#d2d2d7]'}" style="${i < product.rating ? '' : 'stroke-width:0;fill:#d2d2d7'}"></i>`
             ).join('');
 
@@ -1712,8 +1984,8 @@ function renderProducts() {
                                     <input type="text" id="qty-${product.id}" value="1" class="qty-input-apple" readonly>
                                     <button class="qty-btn-apple" onclick="event.stopPropagation(); incrementQty(${product.id})">+</button>
                                 </div>
-                                <button onclick="event.stopPropagation(); addToCart(${product.id})" class="apple-btn p-2.5 rounded-full">
-                                    <i data-lucide="plus" class="w-4 h-4"></i>
+                                <button onclick="event.stopPropagation(); addToCart(${product.id})" class="apple-btn-dark p-2.5 rounded-full">
+                                    <i data-lucide="shopping-bag" class="w-4 h-4"></i>
                                 </button>
                             </div>
                         </div>
@@ -1841,7 +2113,7 @@ function renderProducts() {
             }
 
             const searchTerm = searchQuery.toLowerCase();
-            const filtered = products.filter(p => 
+            const filtered = products.filter(p =>
                 p.name.toLowerCase().includes(searchTerm) ||
                 p.description.toLowerCase().includes(searchTerm) ||
                 p.category.toLowerCase().includes(searchTerm)
@@ -1889,7 +2161,7 @@ function renderProducts() {
             if (existingItem) {
                 existingItem.quantity += quantity;
             } else {
-                cart.push({ 
+                cart.push({
                     id: product.id,
                     name: product.name,
                     price: product.price,
@@ -2033,7 +2305,7 @@ function renderProducts() {
             const modal = document.getElementById('productModal');
             const body = document.getElementById('productModalBody');
 
-            const stars = Array(5).fill(0).map((_, i) => 
+            const stars = Array(5).fill(0).map((_, i) =>
                 `<i data-lucide="star" class="w-5 h-5 ${i < product.rating ? 'fill-current text-amber-400' : 'text-[#d2d2d7]'}"></i>`
             ).join('');
 
@@ -2130,7 +2402,7 @@ function renderProducts() {
             if (existingItem) {
                 existingItem.quantity += quantity;
             } else {
-                cart.push({ 
+                cart.push({
                     id: product.id,
                     name: product.name,
                     price: product.price,
@@ -2279,7 +2551,7 @@ function renderProducts() {
             document.getElementById('successTotal').textContent = `KES ${total.toLocaleString()}`;
             document.getElementById('successItemCount').textContent = totalItems + ' item' + (totalItems !== 1 ? 's' : '');
 
-            const successMessage = selectedPaymentMethod === 'mpesa' 
+            const successMessage = selectedPaymentMethod === 'mpesa'
                 ? `You'll receive an M-Pesa payment prompt shortly on ${phone}. Thank you for shopping with Ekta Digital!`
                 : `Please complete your card payment to finalize the order. Thank you for shopping with Ekta Digital!`;
             document.getElementById('successMessage').textContent = successMessage;
@@ -2392,4 +2664,5 @@ function renderProducts() {
         });
     </script>
 </body>
+
 </html>
